@@ -1,0 +1,53 @@
+1. Para abrir la terminal hay que presionar Ctrl+Alt+T y ejecutar: 
+sudo apt update && sudo apt upgrade -y
+Te pide la contraseña de usuario de oracle y pulsar enter.
+
+2. Instalar los códecs multimedia:
+sudo apt install ubuntu-restricted-extras -y
+
+3. Instalar aplicaciones desde el centro de software de ubuntu (icono de la bolsa naranja) o mediante comandos rápido en la terminal:
+
+4. Entorno de desarrollo y control de versiones:
+	- sudo apt install git -y
+ 	- sudo snap install code --classic
+ 
+ 	* Herramientas de red y administración (sistemas informáticos):
+ 	-sudo apt install net-tools curl wget openssh-server -y
+ 	
+ (Incluye comandos clásicos como ifconfig, cliente/servidor SSH para acceso remoto y descarga de archivos).
+ 
+ 	* Virtualización y contenedores:
+ 	(trabajar con máquinas virtuales o contenedores para probar servidores web o bases de datos):
+ 	- sudo apt install virtualbox docker.io -y
+ 	- sudo usermod -aG docker $USER
+ (Tras instalar Docker, reinicia la sesión para usarlo sin sudo).
+ 
+ 5. Servidores web y Entornos para DAW
+ 	Para la parte de desarrollo web (servidores, bases de datos, ejecutables), puedes preparar el entorno básico directamente desde la terminal:
+ 	* Pila Node.js / NPM (para desarrollo fronted/backend moderno):
+ 		- sudo apt install nodejs npm -y
+ 	* Servidor local LAMP (linux, Apache, MySQL, PHP):
+ 		- sudo apt install apache2 mysql-server php libapache2-mod-php php-mysql -y
+ 	
+ 6. Cómo creamos una llave secreta => para eso me he descargado Google chrome en lubuntu porque sólo estaba firefox por defecto y después he entrado en github.
+ Desde lubuntu abrimos terminal (Ctrl + Alt + T) y escribimos:
+ ssh-keygen -t ed25519 -C "nmolala25@gmail.com" y pulsamos enter.Nos hará tres preguntas: ¿dónde guardar la llave? le damos a enter ¿quieres poner contraseña? le damos a enter ¿confirmar contraseña? le volvemos a dar a enter.
+ Ya se ha creado la llave!!!
+ 	- Ahora copiamos la llave con el siguiente comando:
+ cat ~/.ssh/id_ed25519.pub  y pulsamos enter
+ 	- Te sale un nº largo que empieza por ssh-  y acaba con tu correo. Lo tienes que copiar con Ctrl + C
+ 	- Para pegar la llave en nuestra cuenta de GitHub le damos clic en la foto del perfil arriba a la derecha y entramos en configuración (setting). En el menú de la izquierda, buscamos y pulsamos en SSH and GPG keys. Damos al botón verde => new SSH keys y rellenamos los campos:title (le ponemos nombre) y en key le damos a pegar Ctrl + V para copiar la terminal que nos salía en lubuntu y pulsamos el botón verde Add SSH key. Para confirmar que todo ha salido bien nos vamos a la terminal de ubuntu y escribimos este comando:
+ 	ssh -T git@github.com y pulsamos enter
+ 	Si te pregunta: are you sure you war? le decimos yes y pulsamos enter. Si todo ha salido bien te responderá con un mensaje: Hi Cleocadia! you've ...
+ 
+ 7. Crear nuestra primera carpeta:
+ 
+ 	- Abrimos nuestra terminal con Ctrl + Alt + T y escribimos: mkdir MisProyectos (o mi chuleta, etc) y pulsamos enter.
+ 	- Entramos dentro de la carpeta usando el comando cd (Change Directory/ cambiar directorio) y escribimos en la terminal: cd MisProyectos y pulsamos enter. Ya tendríamos la carpeta dentro de cleocadia y para crear y abrir un archivo llamado Mi_primer_texto.txt escribimos: featherpad mi_primer_texto.txt & y pulsamos enter. Se abrirá una ventana blanca parecida al bloc de notas. Escribimos.
+ 	Si queremos ver lo que hay dentro de nuestra carpeta escribimos: ls y pulsamos enter y aparecerá en la pantalla: mi_primer_texto.txt.
+ 	
+ 	
+ 	
+ 
+ 
+ 	
