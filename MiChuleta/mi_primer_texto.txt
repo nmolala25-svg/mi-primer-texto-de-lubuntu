@@ -45,9 +45,25 @@ sudo apt install ubuntu-restricted-extras -y
  	- Abrimos nuestra terminal con Ctrl + Alt + T y escribimos: mkdir MisProyectos (o mi chuleta, etc) y pulsamos enter.
  	- Entramos dentro de la carpeta usando el comando cd (Change Directory/ cambiar directorio) y escribimos en la terminal: cd MisProyectos y pulsamos enter. Ya tendríamos la carpeta dentro de cleocadia y para crear y abrir un archivo llamado Mi_primer_texto.txt escribimos: featherpad mi_primer_texto.txt & y pulsamos enter. Se abrirá una ventana blanca parecida al bloc de notas. Escribimos.
  	Si queremos ver lo que hay dentro de nuestra carpeta escribimos: ls y pulsamos enter y aparecerá en la pantalla: mi_primer_texto.txt.
- 	
- 	
- 	
+ - Entramos dentro de la carpeta usando el comando cd (Change Directory/ cambiar directorio) y escribimos en la terminal: cd MisProyectos y pulsamos enter. Ya tendríamos la carpeta dentro de cleocadia y para crear y abrir un archivo llamado Mi_primer_texto.txt escribimos: feat8herpad mi_primer_texto.txt & y pulsamos enter. Se abrirá una ventana blanca parecida al bloc de notas. Escribimos.
+ 	Si queremos ver lo que hay dentro de nuestra carpeta escribimos: ls y pulsamos enter y aparecerá en la pantalla: mi_primer_texto.txt.
+ 	8. mandar a GitHub
+ 	- Tenemos que tener claro nuestro usuario y nuestra contraseña en GitHub.
+ 	- Abrimos GitHub, nuevo repositorio y le ponemos un nombre: mi primer texto de lubuntu.
+ 	- Copiamos esto en nuestra terminal:
+ 	git remote set-url origin git@github.com:nmolala25-svg/mi-primer-texto-de-lubuntu.git
+ 	y pulsamos enter.
+ 	- Preparamos y guardamos nuestro archivo:
+ 	Paso 1: git add .  y pulsamos enter
+ 	Paso 2: : git commit -m "mi primer texto listo"  y pulsamos enter
+ 	Paso3: git push -u origin main   y enter
+ 9. Para guardar los cambios en GitHub, ya sea en el mismo archivo de texto u otro nuevo se siguen los tres mismos pasos: add => commit => push
+ - Preparar los cambios (git add):
+ git add . y enter
+ - Confirmar los cambios (git commit):
+ crear un punto de guardado local donde especifique lo que añadiste:
+ git remote add origin https://github.com/nmolala25-svg/Mi-primer-texto-de-lubuntu.git
+ - Guardar cambios en GitHub: git push
  
  
  	
